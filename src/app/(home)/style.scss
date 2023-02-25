@@ -1,0 +1,38 @@
+.header-main {
+    background: transparent;
+    display: flex;
+    height: auto;
+    position: absolute;
+    width: 100%;
+
+    .header-container {
+        align-items: center;
+        display: flex;
+        height: auto;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 15px 0;
+        width: 85%;
+
+        svg {
+            cursor: pointer;
+        }
+
+        ul {
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            gap: 2.7rem;
+            list-style-type: none;
+
+            li {
+                cursor: pointer;
+                font-size: 1.1rem;
+
+                &:nth-child(1) {
+                    color: blue;
+                }
+            }
+        }
+    }
+}
