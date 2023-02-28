@@ -2,7 +2,10 @@ main {
   display: flex;
   height: 100vh;
   justify-content: center;
+  position: absolute;
+  top: 0;
   width: 100%;
+  z-index: -1;
 
   .main-image {
     align-items: center;
@@ -11,6 +14,7 @@ main {
     justify-content: center;
     position: absolute;
     width: 100%;
+    z-index: -2;
 
     img {
       height: 100%;
@@ -22,7 +26,7 @@ main {
   .main-container {
     height: 100%;
     font-family: "Mulish", sans-serif;
-    margin-left: 6rem;
+    margin-left: 5rem;
     width: 100%;
     z-index: 999;
     
@@ -33,7 +37,7 @@ main {
       justify-content: center;
       gap: 2rem;
       height: 100%;
-      width: 28%;
+      width: 33%;
 
       .main-text {
         display: flex;
@@ -46,8 +50,13 @@ main {
         }
   
         h1 {
-          font-size: 1.3rem;
+          background: #1A2980;
+          background: -webkit-linear-gradient(to right, #26D0CE, #1A2980);
+          background: linear-gradient(to right, #26D0CE, #1A2980);
+          filter: drop-shadow(21px 12px 18px #000);          font-size: 1.3rem;
           font-weight: 700;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
         }
       }
   
