@@ -1,15 +1,21 @@
 .main-login{
     background-color: #17181B;
     display: flex;
+    flex-direction: column;
     height: 100vh;
     overflow: hidden;
     width: 100%;
 
+    .bg-login, .container-login{
+        width: 100%;
+    }
+
     .bg-login{
+        position: fixed;
         height: 100%;
-        width: 50%;
 
         img{
+            object-fit: cover;
             position: relative!important;
         }
     }
@@ -21,7 +27,7 @@
         flex-direction: column;
         height: 100%;
         justify-content: center;
-        width: 50%;
+        z-index: 100;
 
         .login-header{
             align-items: center;
@@ -34,6 +40,21 @@
             h1{
                 font-size: 2rem;
             }
+        }
+    }
+}
+
+@media screen and (min-width: 764px) {
+    .main-login{
+        flex-direction: row;
+
+        .bg-login, .container-login{
+            height: 100%;
+            width: 50%;
+        }
+
+        .bg-login{
+            position: relative;
         }
     }
 }

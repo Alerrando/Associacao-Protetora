@@ -12,7 +12,7 @@ export default function Main() {
         <div className="main-info">
           <div className="main-text">
             <p>Ajudar é facíl</p>
-            <h1>Essa caudas precisam de amor e carinho!</h1>
+            <h1>Essas caudas precisam de amor e carinho!</h1>
           </div>
 
           <span className="info-main-span">
@@ -23,7 +23,7 @@ export default function Main() {
           <div className="main-buttons">
             <button className="btn donate">Doar</button>
 
-            <button className="btn catalog">Doação</button>
+            <button className="btn catalog">Adote</button>
           </div>
         </div>
       </div>

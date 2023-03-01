@@ -33,7 +33,7 @@
       justify-content: center;
       gap: 2rem;
       height: 100%;
-      padding-top: 3rem;
+      padding-top: 2rem;
       width: 100%;
 
       .main-text {
@@ -46,13 +46,15 @@
         p {
           color: #3a1078;
           font-weight: 700;
+          position: absolute;
+          right: 5%;
+          top: 62%;
         }
   
         h1 {
           background: #1A2980;
           background: -webkit-linear-gradient(to right, #26D0CE, #1A2980);
           background: linear-gradient(to right, #26D0CE, #1A2980);
-          filter: drop-shadow(21px 12px 18px #000);
           font-size: 1.6rem;
           font-weight: 700;
           -webkit-background-clip: text;
@@ -118,7 +120,14 @@
         .main-text {
           height: auto;
 
+          p{
+            position: relative;
+            top: 0%;
+            right: 0%;
+          }
+
           h1{
+            filter: drop-shadow(21px 12px 18px #000);
             font-size: 2.7rem;
           }
         }
