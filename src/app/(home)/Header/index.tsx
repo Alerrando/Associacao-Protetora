@@ -16,8 +16,6 @@ const MenuHandle: MenuProps = {
 export default function Header() {
   const [menu, setMenu] = useState(MenuHandle);
 
-  console.log(menu.value)
-
   return (
     <header className="header-main">
       <div className="header-container">
@@ -26,7 +24,7 @@ export default function Header() {
         <div className={`menu ${menu.value}`}>
           <nav>
             <header className="header-nav mobile">
-              <X size={32} />
+              <X size={32} onClick={() => setMenu({ value: "closed" })} />
             </header>
 
             <ul>
