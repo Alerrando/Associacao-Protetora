@@ -1,7 +1,7 @@
-import Header from "../(home)/Header";
+import Main from './Main'
 
 export default function Login(){
     return (
-        <Header />
+        <Main />
     )
 }

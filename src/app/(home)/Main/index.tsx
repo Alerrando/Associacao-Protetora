@@ -1,11 +1,12 @@
-/* eslint-disable @next/next/no-img-element */
+import Image from 'next/image';
 import './style.scss'
 
 export default function Main() {
+
   return (
-    <main>
+    <main className="main-home">
       <div className="main-image">
-        <img src="background-main-home.jpg" alt="imagem-background-main-dogs"/>
+        <Image src={"/background-main-home.jpg"} alt="image-background-main-dogs" sizes="100%" quality={100} fill />
       </div>
       <div className="main-container">
         <div className="main-info">
@@ -22,7 +23,7 @@ export default function Main() {
           <div className="main-buttons">
             <button className="btn donate">Doar</button>
 
-            <button className="btn catalog">Catalógo</button>
+            <button className="btn catalog">Doação</button>
           </div>
         </div>
       </div>

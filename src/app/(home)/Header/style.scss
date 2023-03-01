@@ -40,9 +40,6 @@
                     font-size: 1.1rem;
                     transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
                     
-                    &:hover{
-                        transform: translate3d(-200%, 0, 0);
-                    }
                 }
 
                 &::before,
@@ -54,7 +51,7 @@
                 }
 
                 &::before {
-                    background-color: #54b3d6;
+                    background-color: #5d3891;
                     height: 2px;
                     bottom: 0;
                     transform-origin: 100% 50%;
@@ -69,7 +66,7 @@
                     transform-origin: 100% 50%;
                     transform: translate3d(200%, 0, 0);
                     transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
-                    color: #54b3d6;
+                    color: #5d3891;
                 }
 
                 &:hover::before {
@@ -79,6 +76,10 @@
 
                 &:hover::after {
                     transform: translate3d(0, 0, 0);
+                }
+
+                &:hover li{
+                    transform: translate3d(-200%, 0, 0);
                 }
             }
 

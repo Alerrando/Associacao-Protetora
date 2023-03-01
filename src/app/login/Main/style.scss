@@ -1,0 +1,26 @@
+.main-login{
+    background-color: #17181B;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+
+    .bg-login{
+        height: 100%;
+        width: 50%;
+
+        img{
+            position: relative!important;
+        }
+    }
+
+    .container-login{
+        align-items: center;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        width: 50%;
+    }
+}
