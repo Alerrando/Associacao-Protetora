@@ -23,22 +23,24 @@
   .main-container {
     height: 100%;
     font-family: "Mulish", sans-serif;
-    margin-left: 5rem;
+    margin-left: 1rem;
     width: 100%;
     z-index: 999;
     
     .main-info{
       align-items: start;
-      display: flex;
-      flex-direction: column;
+      display: grid;
       justify-content: center;
       gap: 2rem;
       height: 100%;
-      width: 33%;
+      padding-top: 3rem;
+      width: 100%;
 
       .main-text {
         display: flex;
         flex-direction: column;
+        justify-content: end;
+        height: 100%;
         gap: 15px;
   
         p {
@@ -50,7 +52,8 @@
           background: #1A2980;
           background: -webkit-linear-gradient(to right, #26D0CE, #1A2980);
           background: linear-gradient(to right, #26D0CE, #1A2980);
-          filter: drop-shadow(21px 12px 18px #000);          font-size: 1.3rem;
+          filter: drop-shadow(21px 12px 18px #000);
+          font-size: 1.6rem;
           font-weight: 700;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
@@ -58,28 +61,35 @@
       }
   
       .info-main-span {
+        align-items: center;
         color: white;
+        display: flex;
         font-family: "Concert One", Courier, monospace;
+        justify-content: center;
+        height: 100%;
         line-height: 1.8rem;
       }
   
       .main-buttons {
         align-items: center;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        height: 100%;
         gap: 1.5rem;
+        width: 100%;
   
         .btn {
+          align-items: center;
           border: none;
-          border-radius: 5px;
+          border-radius: 8px;
           cursor: pointer;
           color: white;
-          font-size: 1rem;
-          height: 2rem;
           display: flex;
-          padding: 0 26px;
-          place-items: center;
+          font-size: 1rem;
+          height: 2.2rem;
+          justify-content: center;
           outline: none;
+          width: 90%;
         }
   
         .donate {
@@ -96,8 +106,39 @@
   }
   @media screen and (min-width: 768px) {
 
-    .main-container .main-info .main-text h1{
-      font-size: 2.7rem;
-    }
+    .main-container{
+      margin-left: 5rem;
+
+      .main-info {
+        display: flex;
+        flex-direction: column;
+        padding-top: 0;
+        width: 35%;
+
+        .main-text {
+          height: auto;
+
+          h1{
+            font-size: 2.7rem;
+          }
+        }
+
+        .info-main-span{
+          height: auto;
+        }
+
+        .main-buttons{
+          flex-direction: row;
+          height: auto;
+          width: auto;
+
+          .btn{
+            border-radius: 5px;
+            height: 2rem;
+            width: 6rem;
+          }
+        }
+      } 
+    } 
   }
 }

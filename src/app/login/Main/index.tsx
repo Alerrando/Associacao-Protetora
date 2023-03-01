@@ -13,6 +13,7 @@ export default function Main() {
             <section className='container-login'>
                 <header className='login-header'>
                     <PawPrint size={64} />
+                    <h1>Login</h1>
                 </header>
 
                 <form>
