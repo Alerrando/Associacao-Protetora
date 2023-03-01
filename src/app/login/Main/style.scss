@@ -43,18 +43,3 @@
         }
     }
 }
-
-@media screen and (min-width: 764px) {
-    .main-login{
-        flex-direction: row;
-
-        .bg-login, .container-login{
-            height: 100%;
-            width: 50%;
-        }
-
-        .bg-login{
-            position: relative;
-        }
-    }
-}

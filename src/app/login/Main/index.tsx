@@ -7,7 +7,7 @@ export default function Main() {
     return (
         <main className="main-login">
             <div className="bg-login">
-                <Image src={"/background-main-home-cat.jpeg"} alt="image-background-main-dogs" quality={100} fill />
+                <Image src={`${window.innerWidth <= 764 ? "/background-login-mobile.jpeg" : "/background-login-pc.jpg"}`} alt="image-background-main-dogs" quality={100} fill />
             </div>
 
             <section className='container-login'>
