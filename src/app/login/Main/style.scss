@@ -29,16 +29,228 @@
         justify-content: center;
         z-index: 100;
 
-        .login-header{
-            align-items: center;
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            height: auto;
+        .login{ 
+            background: rgba( 255, 255, 255, 0.25 );
+            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+            backdrop-filter: blur( 4px );
+            -webkit-backdrop-filter: blur( 4px );
+            border-radius: 10px;
+            border: 1px solid rgba( 255, 255, 255, 0.18 );
+            height: 100%;
             width: 100%;
 
-            h1{
-                font-size: 2rem;
+            form{
+                height: 100%;
+                width: 100%;
+                .login-header{
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    height: auto;
+                    width: 100%;
+        
+                    h1{
+                        font-size: 2rem;
+                    }
+                }
+    
+                .container-form-inputs{
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%;
+                    gap: 1.6rem;
+                    margin: 3rem auto 0 auto;
+                    width: 80%;
+    
+                    .input{
+                        align-items: center;
+                        border-bottom: 1px solid #fff;
+                        display: flex;
+                        flex-direction: row;
+                        gap: 10px;
+                        width: 100%;
+    
+                        svg{
+                            color: white;
+                        }
+    
+                        input{
+                            background: transparent;
+                            border: none;
+                            color: white;
+                            font-size: .9rem;
+                            outline: none;
+                        }
+    
+                    }
+    
+                    a{
+                        color: #2563EB;
+                        text-align: end;
+                        text-decoration: none;
+                        opacity: 0.6;
+                        width: 100%;
+
+                        &:hover{
+                            opacity: 1;
+                        }
+                    }
+    
+                    .btn{
+                        background-color: rgb(29 78 216);
+                        border: none;
+                        border-radius: 10px;
+                        color: white;
+                        cursor: pointer;
+                        margin-top: 1rem;
+                        padding: 10px 0;
+                        width: 100%;
+                    }
+    
+                    .container-login-apps{
+                        align-items: center;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: end;
+                        height: 20%;
+                        gap: 1rem;
+                        width: 100%;
+    
+                        .login-apps-text{
+                            align-items: center;
+                            color: black;
+                            display: flex;
+                            justify-content: space-between;
+                            width: 100%;
+                            
+                            span{
+                                color: white;
+                                font-size: 1rem;
+                            }
+    
+                            .traco{
+                                background-color: #fff;
+                                height: 1px;
+                                width: 30%;
+                            }
+                        }
+    
+                        .login-apps{
+                            align-items: center;
+                            display: flex;
+                            justify-content: space-between;
+                            height: auto;
+                            width: 100%;
+    
+                            .app{
+                                color: #000;
+                                cursor: pointer;
+                                border-radius: 50%;
+                                height: 1rem;
+                                transition: all 2s ease-in-out;
+                                width: 1rem;
+
+                                svg{
+                                    color: white;
+                                }
+    
+                                .facebook:hover{
+                                        color: blue;
+                                }
+    
+                                .twitter:hover{
+                                    color: #1DA1F2;
+                                }
+    
+                                .google:hover{
+                                    color: #DB4437;
+                                }
+                            }
+                        }
+                    }
+
+                    .register{
+                        color: white;
+                        display: flex;
+                        flex-direction: row;
+                        gap: 10px;
+                        margin: 2.5rem 0 1rem 0;
+
+                        a{
+                            color: #5dbcf6;
+                            width: auto;
+                        }
+                    }
+                }
+            }
+        }
+        @media screen and (min-width: 764px) {
+            .login{
+                background: rgba( 255, 255, 255, 0.7 );
+                backdrop-filter: blur( 4px );
+                -webkit-backdrop-filter: blur( 4px );
+                border: 1px solid rgba( 255, 255, 255, 0.18 );
+                border-radius: 10px;
+                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                display: flex;
+                flex-direction: column;
+                gap: 3rem;
+                height: auto;
+                width: 35%;
+    
+                form{
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%;
+                    width: 100%;
+
+                    svg{
+                        color: white;
+                    }
+
+                    .container-form-inputs {
+                        margin-top: 0;
+
+                        .input {
+                            border-bottom: 1px solid #000;
+
+                            svg, input{
+                                color: black;
+                            }
+
+                        }
+                        
+                        a{
+                            color: #991a92;
+                        }
+
+                        .container-login-apps {
+                            .login-apps-text {
+                                span{
+                                    color: black;
+                                }
+
+                                .traco{
+                                    background-color: #333;
+                                }
+                            }
+
+                            .login-apps .app svg{
+                                color: black;
+                            }
+                        }
+
+                        .register{
+                            color: black;
+                            margin: 2.5rem 0;
+                            
+                            a{
+                                color: blue;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
